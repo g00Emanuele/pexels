@@ -37,8 +37,7 @@ const search = document.getElementById('search').addEventListener('click', (quer
         const photoContainer = document.getElementById('photo-container')
         photoContainer.innerHTML = ''
         photoContainer.innerHTML = data.photos.map((photo) => {
-            return `
-            <div class='col-3'<div class="card">
+            return `<div class='col-3'<div class="card">
                         <img src="${photo.src.tiny}" class="card-img-top" alt="...">
                         <div class="card-body">
                         <p class="card-text">PH: ${photo.photographer}</p>
